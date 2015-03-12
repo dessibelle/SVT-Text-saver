@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F41E55861AB20D8E00AAE51B /* SVT_TextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F41E55851AB20D8E00AAE51B /* SVT_TextView.h */; };
+		F41E55881AB20D8E00AAE51B /* SVT_TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F41E55871AB20D8E00AAE51B /* SVT_TextView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F41E55801AB20D8E00AAE51B /* SVT Text.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SVT Text.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41E55841AB20D8E00AAE51B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F41E55851AB20D8E00AAE51B /* SVT_TextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVT_TextView.h; sourceTree = "<group>"; };
+		F41E55871AB20D8E00AAE51B /* SVT_TextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVT_TextView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F41E557C1AB20D8E00AAE51B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F41E55761AB20D8E00AAE51B = {
+			isa = PBXGroup;
+			children = (
+				F41E55821AB20D8E00AAE51B /* SVT Text */,
+				F41E55811AB20D8E00AAE51B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F41E55811AB20D8E00AAE51B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F41E55801AB20D8E00AAE51B /* SVT Text.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F41E55821AB20D8E00AAE51B /* SVT Text */ = {
+			isa = PBXGroup;
+			children = (
+				F41E55851AB20D8E00AAE51B /* SVT_TextView.h */,
+				F41E55871AB20D8E00AAE51B /* SVT_TextView.m */,
+				F41E55831AB20D8E00AAE51B /* Supporting Files */,
+			);
+			path = "SVT Text";
+			sourceTree = "<group>";
+		};
+		F41E55831AB20D8E00AAE51B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F41E55841AB20D8E00AAE51B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F41E557D1AB20D8E00AAE51B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F41E55861AB20D8E00AAE51B /* SVT_TextView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F41E557F1AB20D8E00AAE51B /* SVT Text */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F41E558B1AB20D8E00AAE51B /* Build configuration list for PBXNativeTarget "SVT Text" */;
+			buildPhases = (
+				F41E557B1AB20D8E00AAE51B /* Sources */,
+				F41E557C1AB20D8E00AAE51B /* Frameworks */,
+				F41E557D1AB20D8E00AAE51B /* Headers */,
+				F41E557E1AB20D8E00AAE51B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SVT Text";
+			productName = "SVT Text";
+			productReference = F41E55801AB20D8E00AAE51B /* SVT Text.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F41E55771AB20D8E00AAE51B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Simon Fransson";
+				TargetAttributes = {
+					F41E557F1AB20D8E00AAE51B = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = F41E557A1AB20D8E00AAE51B /* Build configuration list for PBXProject "SVT Text" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F41E55761AB20D8E00AAE51B;
+			productRefGroup = F41E55811AB20D8E00AAE51B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F41E557F1AB20D8E00AAE51B /* SVT Text */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F41E557E1AB20D8E00AAE51B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F41E557B1AB20D8E00AAE51B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F41E55881AB20D8E00AAE51B /* SVT_TextView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F41E55891AB20D8E00AAE51B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F41E558A1AB20D8E00AAE51B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F41E558C1AB20D8E00AAE51B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "SVT Text/Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		F41E558D1AB20D8E00AAE51B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "SVT Text/Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F41E557A1AB20D8E00AAE51B /* Build configuration list for PBXProject "SVT Text" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F41E55891AB20D8E00AAE51B /* Debug */,
+				F41E558A1AB20D8E00AAE51B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F41E558B1AB20D8E00AAE51B /* Build configuration list for PBXNativeTarget "SVT Text" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F41E558C1AB20D8E00AAE51B /* Debug */,
+				F41E558D1AB20D8E00AAE51B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F41E55771AB20D8E00AAE51B /* Project object */;
+}

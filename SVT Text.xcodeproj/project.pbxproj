@@ -7,19 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F41E55861AB20D8E00AAE51B /* SVT_TextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F41E55851AB20D8E00AAE51B /* SVT_TextView.h */; };
-		F41E55881AB20D8E00AAE51B /* SVT_TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F41E55871AB20D8E00AAE51B /* SVT_TextView.m */; };
+		F400077F1AD58C18003984F8 /* stylesheet.css in Resources */ = {isa = PBXBuildFile; fileRef = F41E55911AB237F600AAE51B /* stylesheet.css */; };
+		F40007811AD58CA2003984F8 /* SVT Text.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = F41E55801AB20D8E00AAE51B /* SVT Text.saver */; };
+		F41E55901AB20E7D00AAE51B /* SVTTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E558F1AB20E7D00AAE51B /* SVTTextView.swift */; };
+		F41E55921AB237F600AAE51B /* stylesheet.css in Resources */ = {isa = PBXBuildFile; fileRef = F41E55911AB237F600AAE51B /* stylesheet.css */; };
+		F4DED6911AB2C3FB008B54AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DED6901AB2C3FB008B54AB /* AppDelegate.swift */; };
+		F4DED6931AB2C3FB008B54AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DED6921AB2C3FB008B54AB /* Images.xcassets */; };
+		F4DED6961AB2C3FB008B54AB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DED6941AB2C3FB008B54AB /* MainMenu.xib */; };
+		F4DED6A21AB2C3FB008B54AB /* ViewTesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DED6A11AB2C3FB008B54AB /* ViewTesterTests.swift */; };
+		F4DED6AA1AB2C4C1008B54AB /* SVTTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E558F1AB20E7D00AAE51B /* SVTTextView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4DED69C1AB2C3FB008B54AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F41E55771AB20D8E00AAE51B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4DED68B1AB2C3FA008B54AB;
+			remoteInfo = ViewTester;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F40007801AD58C92003984F8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Screen Savers";
+			dstSubfolderSpec = 0;
+			files = (
+				F40007811AD58CA2003984F8 /* SVT Text.saver in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F41E55801AB20D8E00AAE51B /* SVT Text.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SVT Text.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41E55841AB20D8E00AAE51B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F41E55851AB20D8E00AAE51B /* SVT_TextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVT_TextView.h; sourceTree = "<group>"; };
-		F41E55871AB20D8E00AAE51B /* SVT_TextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVT_TextView.m; sourceTree = "<group>"; };
+		F41E558E1AB20E7D00AAE51B /* SVT Text-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SVT Text-Bridging-Header.h"; sourceTree = "<group>"; };
+		F41E558F1AB20E7D00AAE51B /* SVTTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVTTextView.swift; sourceTree = "<group>"; };
+		F41E55911AB237F600AAE51B /* stylesheet.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = stylesheet.css; sourceTree = "<group>"; };
+		F4DED68C1AB2C3FA008B54AB /* ViewTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DED68F1AB2C3FB008B54AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4DED6901AB2C3FB008B54AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4DED6921AB2C3FB008B54AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F4DED6951AB2C3FB008B54AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F4DED69B1AB2C3FB008B54AB /* ViewTesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewTesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DED6A01AB2C3FB008B54AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4DED6A11AB2C3FB008B54AB /* ViewTesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTesterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F41E557C1AB20D8E00AAE51B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4DED6891AB2C3FA008B54AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4DED6981AB2C3FB008B54AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				F41E55821AB20D8E00AAE51B /* SVT Text */,
+				F4DED68D1AB2C3FB008B54AB /* ViewTester */,
+				F4DED69E1AB2C3FB008B54AB /* ViewTesterTests */,
 				F41E55811AB20D8E00AAE51B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				F41E55801AB20D8E00AAE51B /* SVT Text.saver */,
+				F4DED68C1AB2C3FA008B54AB /* ViewTester.app */,
+				F4DED69B1AB2C3FB008B54AB /* ViewTesterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +105,9 @@
 		F41E55821AB20D8E00AAE51B /* SVT Text */ = {
 			isa = PBXGroup;
 			children = (
-				F41E55851AB20D8E00AAE51B /* SVT_TextView.h */,
-				F41E55871AB20D8E00AAE51B /* SVT_TextView.m */,
+				F41E558F1AB20E7D00AAE51B /* SVTTextView.swift */,
 				F41E55831AB20D8E00AAE51B /* Supporting Files */,
+				F41E558E1AB20E7D00AAE51B /* SVT Text-Bridging-Header.h */,
 			);
 			path = "SVT Text";
 			sourceTree = "<group>";
@@ -59,6 +116,43 @@
 			isa = PBXGroup;
 			children = (
 				F41E55841AB20D8E00AAE51B /* Info.plist */,
+				F41E55911AB237F600AAE51B /* stylesheet.css */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4DED68D1AB2C3FB008B54AB /* ViewTester */ = {
+			isa = PBXGroup;
+			children = (
+				F4DED6901AB2C3FB008B54AB /* AppDelegate.swift */,
+				F4DED6921AB2C3FB008B54AB /* Images.xcassets */,
+				F4DED6941AB2C3FB008B54AB /* MainMenu.xib */,
+				F4DED68E1AB2C3FB008B54AB /* Supporting Files */,
+			);
+			path = ViewTester;
+			sourceTree = "<group>";
+		};
+		F4DED68E1AB2C3FB008B54AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4DED68F1AB2C3FB008B54AB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4DED69E1AB2C3FB008B54AB /* ViewTesterTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4DED6A11AB2C3FB008B54AB /* ViewTesterTests.swift */,
+				F4DED69F1AB2C3FB008B54AB /* Supporting Files */,
+			);
+			path = ViewTesterTests;
+			sourceTree = "<group>";
+		};
+		F4DED69F1AB2C3FB008B54AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4DED6A01AB2C3FB008B54AB /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -70,7 +164,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F41E55861AB20D8E00AAE51B /* SVT_TextView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +178,7 @@
 				F41E557C1AB20D8E00AAE51B /* Frameworks */,
 				F41E557D1AB20D8E00AAE51B /* Headers */,
 				F41E557E1AB20D8E00AAE51B /* Resources */,
+				F40007801AD58C92003984F8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -94,6 +188,41 @@
 			productName = "SVT Text";
 			productReference = F41E55801AB20D8E00AAE51B /* SVT Text.saver */;
 			productType = "com.apple.product-type.bundle";
+		};
+		F4DED68B1AB2C3FA008B54AB /* ViewTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4DED6A71AB2C3FB008B54AB /* Build configuration list for PBXNativeTarget "ViewTester" */;
+			buildPhases = (
+				F4DED6881AB2C3FA008B54AB /* Sources */,
+				F4DED6891AB2C3FA008B54AB /* Frameworks */,
+				F4DED68A1AB2C3FA008B54AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViewTester;
+			productName = ViewTester;
+			productReference = F4DED68C1AB2C3FA008B54AB /* ViewTester.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4DED69A1AB2C3FB008B54AB /* ViewTesterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4DED6A81AB2C3FB008B54AB /* Build configuration list for PBXNativeTarget "ViewTesterTests" */;
+			buildPhases = (
+				F4DED6971AB2C3FB008B54AB /* Sources */,
+				F4DED6981AB2C3FB008B54AB /* Frameworks */,
+				F4DED6991AB2C3FB008B54AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4DED69D1AB2C3FB008B54AB /* PBXTargetDependency */,
+			);
+			name = ViewTesterTests;
+			productName = ViewTesterTests;
+			productReference = F4DED69B1AB2C3FB008B54AB /* ViewTesterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -107,6 +236,13 @@
 					F41E557F1AB20D8E00AAE51B = {
 						CreatedOnToolsVersion = 6.2;
 					};
+					F4DED68B1AB2C3FA008B54AB = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					F4DED69A1AB2C3FB008B54AB = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = F4DED68B1AB2C3FA008B54AB;
+					};
 				};
 			};
 			buildConfigurationList = F41E557A1AB20D8E00AAE51B /* Build configuration list for PBXProject "SVT Text" */;
@@ -115,6 +251,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = F41E55761AB20D8E00AAE51B;
 			productRefGroup = F41E55811AB20D8E00AAE51B /* Products */;
@@ -122,12 +259,32 @@
 			projectRoot = "";
 			targets = (
 				F41E557F1AB20D8E00AAE51B /* SVT Text */,
+				F4DED68B1AB2C3FA008B54AB /* ViewTester */,
+				F4DED69A1AB2C3FB008B54AB /* ViewTesterTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F41E557E1AB20D8E00AAE51B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F41E55921AB237F600AAE51B /* stylesheet.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4DED68A1AB2C3FA008B54AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F400077F1AD58C18003984F8 /* stylesheet.css in Resources */,
+				F4DED6931AB2C3FB008B54AB /* Images.xcassets in Resources */,
+				F4DED6961AB2C3FB008B54AB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4DED6991AB2C3FB008B54AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -141,11 +298,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F41E55881AB20D8E00AAE51B /* SVT_TextView.m in Sources */,
+				F41E55901AB20E7D00AAE51B /* SVTTextView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4DED6881AB2C3FA008B54AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4DED6911AB2C3FB008B54AB /* AppDelegate.swift in Sources */,
+				F4DED6AA1AB2C4C1008B54AB /* SVTTextView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4DED6971AB2C3FB008B54AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4DED6A21AB2C3FB008B54AB /* ViewTesterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4DED69D1AB2C3FB008B54AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4DED68B1AB2C3FA008B54AB /* ViewTester */;
+			targetProxy = F4DED69C1AB2C3FB008B54AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4DED6941AB2C3FB008B54AB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4DED6951AB2C3FB008B54AB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F41E55891AB20D8E00AAE51B /* Debug */ = {
@@ -166,6 +359,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -181,10 +375,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.10;
 			};
 			name = Debug;
 		};
@@ -207,6 +401,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -216,19 +411,23 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.10;
 			};
 			name = Release;
 		};
 		F41E558C1AB20D8E00AAE51B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "SVT Text/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SVT Text/SVT Text-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -236,11 +435,87 @@
 		F41E558D1AB20D8E00AAE51B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "SVT Text/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SVT Text/SVT Text-Bridging-Header.h";
 				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+		F4DED6A31AB2C3FB008B54AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ViewTester/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4DED6A41AB2C3FB008B54AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ViewTester/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F4DED6A51AB2C3FB008B54AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ViewTesterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewTester.app/Contents/MacOS/ViewTester";
+			};
+			name = Debug;
+		};
+		F4DED6A61AB2C3FB008B54AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ViewTesterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewTester.app/Contents/MacOS/ViewTester";
 			};
 			name = Release;
 		};
@@ -263,6 +538,25 @@
 				F41E558D1AB20D8E00AAE51B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4DED6A71AB2C3FB008B54AB /* Build configuration list for PBXNativeTarget "ViewTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4DED6A31AB2C3FB008B54AB /* Debug */,
+				F4DED6A41AB2C3FB008B54AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4DED6A81AB2C3FB008B54AB /* Build configuration list for PBXNativeTarget "ViewTesterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4DED6A51AB2C3FB008B54AB /* Debug */,
+				F4DED6A61AB2C3FB008B54AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

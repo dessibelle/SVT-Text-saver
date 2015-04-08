@@ -1,0 +1,22 @@
+html, body {
+    background: black;
+    font-smooth: never !important;
+    -webkit-font-smoothing: none !important;
+}
+
+body, pre.root {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(2, 2);
+}
+
+pre.root {
+    width: 500px;
+/*    margin: 1em auto;*/
+}

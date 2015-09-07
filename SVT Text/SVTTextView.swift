@@ -22,7 +22,7 @@ class SVTTextView : ScreenSaverView {
         self.webView.autoresizingMask = (NSAutoresizingMaskOptions.ViewHeightSizable|NSAutoresizingMaskOptions.ViewWidthSizable|NSAutoresizingMaskOptions.ViewMinXMargin|NSAutoresizingMaskOptions.ViewMaxXMargin|NSAutoresizingMaskOptions.ViewMinYMargin|NSAutoresizingMaskOptions.ViewMaxYMargin)
     }
     
-    convenience override init() {
+    convenience init() {
         self.init(frame: CGRectZero, isPreview: false)
     }
     
@@ -72,7 +72,7 @@ class SVTTextView : ScreenSaverView {
         var html: DOMElement = doc.querySelector("html")
         html.replaceChild(body, oldChild: oldBody)
         
-        var bundleIdentifier: String = NSBundle(forClass: self.dynamicType).objectForInfoDictionaryKey("CFBundleIdentifier") as String
+        var bundleIdentifier: String = NSBundle(forClass: self.dynamicType).objectForInfoDictionaryKey("CFBundleIdentifier") as! String
         
         var stylesheetURL: NSURL? = NSBundle(identifier: bundleIdentifier)?.resourceURL?.URLByAppendingPathComponent("stylesheet").URLByAppendingPathExtension("css")
         

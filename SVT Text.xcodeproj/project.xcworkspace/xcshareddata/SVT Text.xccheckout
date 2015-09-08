@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F7E2E415-2A5E-4C75-A27A-166329F52050</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SVT Text</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D87DA478D25FB597B87D0EBD892B9B45FD6F209B</key>
+		<string>github.com:dessibelle/SVT-Text.saver.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SVT Text.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D87DA478D25FB597B87D0EBD892B9B45FD6F209B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:dessibelle/SVT-Text.saver.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D87DA478D25FB597B87D0EBD892B9B45FD6F209B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D87DA478D25FB597B87D0EBD892B9B45FD6F209B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SVT%20Text</string>
+		</dict>
+	</array>
+</dict>
+</plist>

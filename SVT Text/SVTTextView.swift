@@ -5,16 +5,48 @@ import WebKit
 
 class SVTTextView : ScreenSaverView {
     
+    static let externalURL: NSString = "https://github.com/dessibelle/SVT-Text-saver"
+    
+    @IBOutlet var configSheet: NSWindow?
+    @IBOutlet var intervalSlider: NSSlider?
+    
     let urlFormat: String = "http://www.svt.se/svttext/tv/pages/%d.html"
     
+    var reloadIntervalString: String {
+        if self.intervalSlider != nil {
+            var value: Int32 = self.intervalSlider!.intValue
+            return String(format: "every %d second%@", value, value == 1 ? "" : "s")
+        }
+        
+        return ""
+    }
+    
+    var sliderValue: NSNumber? {
+        willSet {
+            self.willChangeValueForKey("reloadIntervalString")
+        }
+        didSet {
+            self.didChangeValueForKey("reloadIntervalString")
+        }
+    }
+    
+    var defaults: ScreenSaverDefaults
+    
     var pageIsLoaded: Bool = false
+    var reloadInterval: NSNumber = 5.0
     var webView: WebView = {
         WebView()
     }()
     
     func setUp(frame: NSRect) {
+        self.defaults.registerDefaults(["ReloadInterval": 5.0])
+        self.reloadInterval = self.defaults.floatForKey("ReloadInterval")
+        
+        self.window?.backgroundColor = NSColor.blackColor()
+        
         self.webView = WebView(frame: frame)
         self.webView.frameLoadDelegate = self
+        self.webView.drawsBackground = false
         self.webView.alphaValue = 0.0
         self.addSubview(self.webView)
         
@@ -27,14 +59,17 @@ class SVTTextView : ScreenSaverView {
     }
     
     override init(frame: NSRect, isPreview: Bool) {
+        self.defaults = ScreenSaverDefaults.defaultsForModuleWithName("SVTTextSaver") as! ScreenSaverDefaults
         super.init(frame: frame, isPreview: isPreview)
         
         setUp(frame)
-        setAnimationTimeInterval(5.0)
+        setAnimationTimeInterval(NSTimeInterval(self.reloadInterval.floatValue))
     }
     
     required init?(coder aDecoder: NSCoder) {
+        self.defaults = ScreenSaverDefaults.defaultsForModuleWithName("SVTTextSaver") as! ScreenSaverDefaults
         super.init(coder: aDecoder)
+        
         setUp(NSZeroRect)
     }
     
@@ -76,7 +111,7 @@ class SVTTextView : ScreenSaverView {
         
         var stylesheetURL: NSURL? = NSBundle(identifier: bundleIdentifier)?.resourceURL?.URLByAppendingPathComponent("stylesheet").URLByAppendingPathExtension("css")
         
-        if (stylesheetURL != nil) {
+        if stylesheetURL != nil {
             var link: DOMElement = doc.createElement("link")
             
             link.setAttribute("rel", value: "stylesheet")
@@ -89,8 +124,6 @@ class SVTTextView : ScreenSaverView {
         
         self.pageIsLoaded = true
         self.webView.alphaValue = 1.0
-        
-        self.needsDisplay = true
     }
     
     override func startAnimation() {
@@ -100,29 +133,48 @@ class SVTTextView : ScreenSaverView {
     override func stopAnimation() {
         super.stopAnimation()
     }
-    
-    override func drawRect(rect: NSRect) {
-        if (self.webView.frame == NSZeroRect) {
-            self.webView.frame = rect
-        }
-        
-//        if (!self.pageIsLoaded) {
-//            NSColor.blackColor().set()
-//            NSRectFill(rect)
-//        }
-        
-        super.drawRect(rect)
-    }
-    
+
     override func animateOneFrame() {
         self.loadPageByNumber(self.randInRange(100..<999))
     }
     
     override func hasConfigureSheet() -> Bool {
-        return false
+        return true
     }
     
     override func configureSheet() -> NSWindow? {
-        return nil
+        if self.configSheet == nil {
+            var bundle: NSBundle = NSBundle(forClass: self.dynamicType)
+            var topLevelObjects: AutoreleasingUnsafeMutablePointer<NSArray?> = nil
+            var loadStatus: Bool = bundle.loadNibNamed("ConfigureSheet", owner: self, topLevelObjects: topLevelObjects)
+        }
+        
+        self.willChangeValueForKey("reloadIntervalString")
+        self.intervalSlider?.floatValue = self.reloadInterval.floatValue
+        self.didChangeValueForKey("reloadIntervalString")
+        
+        return self.configSheet
     }
+    
+    @IBAction func configSheetCancelAction(sender: NSButton) {
+        if let result: Void = self.configSheet?.sheetParent?.endSheet(self.configSheet!, returnCode: NSModalResponseCancel) {
+            self.configSheet?.sheetParent?.endSheet(self.configSheet!, returnCode: NSModalResponseCancel)
+        } else {
+            NSApplication.sharedApplication().endSheet(self.configSheet!)
+        }
+    }
+    
+    @IBAction func configSheetOKAction(sender: NSButton) {
+        self.reloadInterval = self.intervalSlider!.floatValue
+        self.defaults.setFloat(self.reloadInterval.floatValue, forKey: "ReloadInterval")
+        self.defaults.synchronize()
+        setAnimationTimeInterval(NSTimeInterval(self.reloadInterval.floatValue))
+        
+        self.configSheetCancelAction(sender)
+    }
+    
+    @IBAction func configSheetGotoURLAction(sender: NSButton) {
+        NSWorkspace.sharedWorkspace().openURL(NSURL(string: SVTTextView.externalURL as String)!)
+    }
+
 }

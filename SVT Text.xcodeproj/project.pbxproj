@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F400077F1AD58C18003984F8 /* stylesheet.css in Resources */ = {isa = PBXBuildFile; fileRef = F41E55911AB237F600AAE51B /* stylesheet.css */; };
-		F40007811AD58CA2003984F8 /* SVT Text.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = F41E55801AB20D8E00AAE51B /* SVT Text.saver */; };
+		F403CCCC1B9DF1E400B76E6A /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = F403CCCB1B9DF1E400B76E6A /* ConfigureSheet.xib */; };
+		F403CCCF1B9DFF0700B76E6A /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F403CCCD1B9DFF0700B76E6A /* thumbnail.png */; };
+		F403CCD01B9DFF0700B76E6A /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F403CCCE1B9DFF0700B76E6A /* thumbnail@2x.png */; };
 		F41E55901AB20E7D00AAE51B /* SVTTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E558F1AB20E7D00AAE51B /* SVTTextView.swift */; };
 		F41E55921AB237F600AAE51B /* stylesheet.css in Resources */ = {isa = PBXBuildFile; fileRef = F41E55911AB237F600AAE51B /* stylesheet.css */; };
 		F4DED6911AB2C3FB008B54AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DED6901AB2C3FB008B54AB /* AppDelegate.swift */; };
@@ -28,20 +30,10 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		F40007801AD58C92003984F8 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "~/Library/Screen Savers";
-			dstSubfolderSpec = 0;
-			files = (
-				F40007811AD58CA2003984F8 /* SVT Text.saver in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		F403CCCB1B9DF1E400B76E6A /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
+		F403CCCD1B9DFF0700B76E6A /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		F403CCCE1B9DFF0700B76E6A /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
 		F41E55801AB20D8E00AAE51B /* SVT Text.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SVT Text.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41E55841AB20D8E00AAE51B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F41E558E1AB20E7D00AAE51B /* SVT Text-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SVT Text-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -115,6 +107,9 @@
 		F41E55831AB20D8E00AAE51B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F403CCCB1B9DF1E400B76E6A /* ConfigureSheet.xib */,
+				F403CCCD1B9DFF0700B76E6A /* thumbnail.png */,
+				F403CCCE1B9DFF0700B76E6A /* thumbnail@2x.png */,
 				F41E55841AB20D8E00AAE51B /* Info.plist */,
 				F41E55911AB237F600AAE51B /* stylesheet.css */,
 			);
@@ -178,7 +173,6 @@
 				F41E557C1AB20D8E00AAE51B /* Frameworks */,
 				F41E557D1AB20D8E00AAE51B /* Headers */,
 				F41E557E1AB20D8E00AAE51B /* Resources */,
-				F40007801AD58C92003984F8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -230,7 +224,7 @@
 		F41E55771AB20D8E00AAE51B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Simon Fransson";
 				TargetAttributes = {
 					F41E557F1AB20D8E00AAE51B = {
@@ -270,7 +264,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F403CCCC1B9DF1E400B76E6A /* ConfigureSheet.xib in Resources */,
+				F403CCD01B9DFF0700B76E6A /* thumbnail@2x.png in Resources */,
 				F41E55921AB237F600AAE51B /* stylesheet.css in Resources */,
+				F403CCCF1B9DFF0700B76E6A /* thumbnail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +375,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.10;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -413,7 +410,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx10.10;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};

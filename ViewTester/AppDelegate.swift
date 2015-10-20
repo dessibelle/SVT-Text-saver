@@ -20,7 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.window.contentView.addSubview(self.svttext)
         
 //        self.window.contentView.autoresizesSubviews = true
-        self.svttext.autoresizingMask = (NSAutoresizingMaskOptions.ViewHeightSizable|NSAutoresizingMaskOptions.ViewWidthSizable|NSAutoresizingMaskOptions.ViewMinXMargin|NSAutoresizingMaskOptions.ViewMaxXMargin|NSAutoresizingMaskOptions.ViewMinYMargin|NSAutoresizingMaskOptions.ViewMaxYMargin)
+        self.svttext.autoresizingMask = ([NSAutoresizingMaskOptions.ViewHeightSizable, NSAutoresizingMaskOptions.ViewWidthSizable, NSAutoresizingMaskOptions.ViewMinXMargin, NSAutoresizingMaskOptions.ViewMaxXMargin, NSAutoresizingMaskOptions.ViewMinYMargin, NSAutoresizingMaskOptions.ViewMaxYMargin])
         
         self.svttext.startAnimation()
     }

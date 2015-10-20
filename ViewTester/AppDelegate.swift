@@ -16,8 +16,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         
-        self.svttext = SVTTextView(frame: self.window.contentView.frame, isPreview: false)
-        self.window.contentView.addSubview(self.svttext)
+        self.svttext = SVTTextView(frame: self.window.contentView!.frame, isPreview: false)
+        self.window.contentView!.addSubview(self.svttext)
         
 //        self.window.contentView.autoresizesSubviews = true
         self.svttext.autoresizingMask = ([NSAutoresizingMaskOptions.ViewHeightSizable, NSAutoresizingMaskOptions.ViewWidthSizable, NSAutoresizingMaskOptions.ViewMinXMargin, NSAutoresizingMaskOptions.ViewMaxXMargin, NSAutoresizingMaskOptions.ViewMinYMargin, NSAutoresizingMaskOptions.ViewMaxYMargin])

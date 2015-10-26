@@ -97,7 +97,7 @@ class SVTTextView : ScreenSaverView, WebFrameLoadDelegate {
     }
     
     func webView(sender: WebView!, didFinishLoadForFrame frame: WebFrame!) {
-        if let doc: DOMDocument = self.webView.mainFrame.DOMDocument {
+        if let doc: DOMDocument = frame.DOMDocument {
             if let oldBody: DOMElement = doc.querySelector("body") {
                 let body: DOMElement = doc.createElement("body")
                 
